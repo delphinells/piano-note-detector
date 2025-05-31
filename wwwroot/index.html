@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piyano Nota Tanıma</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Piyano Nota Tanıma</h1>
+        
+        <div class="piano-container">
+            <div id="piano-keys"></div>
+            <div class="detection-results">
+                <div id="result-display">
+                    <h2>Tespit Sonucu:</h2>
+                    <div id="result-text" class="result-text">-</div>
+                    <div id="result-details" class="result-details">-</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="controls">
+            <div class="buttons">
+                <button id="recordButton" class="record-btn">
+                    <span class="record-icon"></span>
+                    Kayıt
+                </button>
+                <div class="detect-buttons">
+                    <button id="detectNoteButton" class="detect-btn" disabled>
+                        <span class="detect-icon"></span>
+                        Nota Tespit Et
+                    </button>
+                    <button id="detectChordButton" class="detect-btn" disabled>
+                        <span class="detect-icon"></span>
+                        Akor Tespit Et
+                    </button>
+                </div>
+            </div>
+            <div id="status" class="status">Hazır</div>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html> 
